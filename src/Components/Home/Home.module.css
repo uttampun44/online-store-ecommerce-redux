@@ -1,0 +1,39 @@
+.singleproductdesign{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+    column-gap: 2em;
+    row-gap: 2em;
+    margin: 2em 0em;
+}
+.image img{
+    width: 150px;
+    height: 150px;
+     object-fit: contain;
+}
+.productsection{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+.descriptionsection h1 {
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.5;
+    min-width: min-content;
+}
+.descriptionsection h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 2;
+}
+.descriptionsection p{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.addtocart button{
+  font-size: 1em;
+  padding: .5em 1em;
+}

@@ -1,0 +1,21 @@
+.head{
+    background-color: cornflowerblue;
+    padding: 1em 1em;
+}
+.mainheader{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.title{
+    color: #fff;
+}
+.input{
+    flex: .3;
+    text-align: center;
+}
+.input input{
+    width: 100%;
+    justify-self: center;
+    padding: .5em;
+}
