@@ -41,7 +41,6 @@ function Home() {
                             <div className={Homedesign.descriptionsection}>
                                 <h1>{items.title}</h1>
                                 <h2>{items.price}</h2>
-                                <p>{items.description}</p>
                             </div>
                             <div className={Homedesign.addtocart}>
                                 <button onClick={addtoCart}>Add To Cart</button>
