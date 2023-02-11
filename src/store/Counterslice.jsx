@@ -16,5 +16,6 @@ const Counterslice = createSlice({
     }
 })
 console.log(Counterslice.actions)
-export default Counterslice.reducer
+export default Counterslice.reducer;
+export const {addtoCart, removefromCart} = Counterslice.actions;
 
