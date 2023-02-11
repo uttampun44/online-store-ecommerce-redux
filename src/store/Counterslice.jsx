@@ -7,14 +7,14 @@ const Counterslice = createSlice({
     initialState,
     
     reducers:{
-        addtoCart: (state, action) =>{
+        addtoCart(state, action){
              state.push(action.payload)
         },
-        removefromCart : (state, action) =>{
+        removefromCart(state, action){
                state = state.filter(item > item.id !== action.payload)
         }
     }
 })
+console.log(Counterslice.actions)
+export default Counterslice.reducer
 
-export const [addtoCart, removefromCart] = Counterslice.actions();
-export default Counterslice.reducer;
