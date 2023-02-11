@@ -4,8 +4,10 @@ import Counterslice from "./Counterslice";
 
 // store configuration
 
-export default configureStore({
+const Store =  configureStore({
    reducer:{
     cart: Counterslice
    }
 })
+
+export default Store;
