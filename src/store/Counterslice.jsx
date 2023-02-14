@@ -2,19 +2,23 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = [];
 
+
+
 const Counterslice = createSlice({
     name: 'cart',
     initialState,
     
     reducers:{
-        addtoCart(state, action){
+    
+        addcart(state, action){
              state.push(action.payload)
+             console.log(action.payload)
         },
-        removefromCart(state, action){
+        removecart(state, action){
                state = state.filter(item > item.id !== action.payload)
         }
     }
 })
 console.log(Counterslice.actions)
 export default Counterslice.reducer
-
+export const {addcart, removecart} = Counterslice.actions
