@@ -19,16 +19,16 @@ function Home() {
        
 
       setSingleproduct(res);
-      console.log(res);
+      console.table(res);
      }
 
      productData()
     }, [])
 
-     const addTocart = (singleproduct) =>{
+     const addTocart = (items) =>{
        console.log("addtocart")
       
-       dispatchData(addcart(singleproduct))
+       dispatchData(addcart(items))
      }
 
   return (
@@ -51,7 +51,7 @@ function Home() {
                                 <h2>{items.price}</h2>
                             </div>
                             <div className={Homedesign.addtocart}>
-                                <button onClick={addTocart}>Add To Cart</button>
+                                <button onClick={() => addTocart(items)}>Add To Cart</button>
                             </div>
                         </div>
                   )
