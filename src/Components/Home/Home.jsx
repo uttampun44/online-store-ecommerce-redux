@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react'
+import { useDispatch} from 'react-redux';
+import { addcart } from '../../store/Counterslice';
 import Navbar from '../Navbar/Navbar'
 import Homedesign from './Home.module.css';
 
+
 function Home() {
    const [singleproduct, setSingleproduct] = useState([]);
+
+   const dispatchData = useDispatch();
+
 
     useEffect(() =>{
 
@@ -13,14 +19,16 @@ function Home() {
        
 
       setSingleproduct(res);
-      console.log(res);
+      console.table(res);
      }
 
      productData()
     }, [])
 
-     const addtoCart = () =>{
+     const addTocart = (items) =>{
        console.log("addtocart")
+      
+       dispatchData(addcart(items))
      }
 
   return (
@@ -43,7 +51,7 @@ function Home() {
                                 <h2>{items.price}</h2>
                             </div>
                             <div className={Homedesign.addtocart}>
-                                <button onClick={addtoCart}>Add To Cart</button>
+                                <button onClick={() => addTocart(items)}>Add To Cart</button>
                             </div>
                         </div>
                   )

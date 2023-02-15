@@ -9,7 +9,7 @@ function App() {
      <div className="App">
       <Routes>
         <Route exact path='/' element = {<Home />}></Route>
-        <Route exact path='/checkoutpage' element = {<Checkoutpage />}></Route>
+        <Route exact path='/cart' element = {<Checkoutpage />}></Route>
       </Routes>
      </div>
    </BrowserRouter>
