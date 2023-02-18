@@ -7,6 +7,7 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
 .title{
     color: #fff;
 }
@@ -18,4 +19,29 @@
     width: 100%;
     justify-self: center;
     padding: .5em;
+    border-radius: 20px;
+    outline: none;
+}
+.cartandprice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 2em;
+}
+.cartitem{
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+}
+.cartitem p{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.linkcart a{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
 }

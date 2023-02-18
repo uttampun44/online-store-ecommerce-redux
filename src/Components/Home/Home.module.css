@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-items: center;
-    column-gap: 2em;
     row-gap: 2em;
     margin: 2em 0em;
 }
@@ -12,10 +11,17 @@
      object-fit: contain;
 }
 .productsection{
-    width: 70%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     row-gap: 2em;
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 1em 0em;
+    border-radius: 15px;
+}
+.descriptionsection{
+    text-align: center;
 }
 .descriptionsection h1 {
     font-size: 1.1em;
@@ -36,4 +42,12 @@
 .addtocart button{
   font-size: 1em;
   padding: .5em 1em;
+  background-color: rgb(124, 163, 207);
+  border-radius: 20px;
+  border: none;
+  box-shadow: 10px whitesmoke;
+  color: white;
+}
+.addtocart button:active{
+    border: 3px solid rgb(159, 111, 214);
 }
